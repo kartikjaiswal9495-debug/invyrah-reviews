@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Chaap Express - Premium Review</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap');
+        
+        body { 
+            font-family: 'Jost', sans-serif; 
+            /* PREMIUM BACKGROUND - RICH GRADIENT WITH NOSTALGIC PATTERN FOR VAST AMBIENCE */
+            background: radial-gradient(circle at 10% 20%, rgba(26,61,41,0.06) 0%, rgba(197,160,89,0.04) 90%), #ECE9E1;
+            background-image: 
+                radial-gradient(rgba(197,160,89,0.12) 1px, transparent 1px), 
+                radial-gradient(rgba(20,61,41,0.05) 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+            color: #2C2C2C;
+        }
+        
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Premium Category Buttons - PERMANENT SOFT GLOW ALWAYS VISIBLE */
+        .cat-btn {
+            background-color: #FFFFFF;
+            color: #6A6A6A;
+            border: 1px solid #E5E0D8;
+            /* Permanent golden aura */
+            box-shadow: 0 0 14px rgba(197, 160, 89, 0.22);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .cat-btn:hover:not(.active) {
+            border-color: #C5A059;
+            color: #C5A059;
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.4); 
+            transform: translateY(-1.5px);
+        }
+        /* ACTIVE HIGHLY CONTRASTED DEEP BLACK + IMMENSE GOLDEN GLOW */
+        .cat-btn.active {
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+            border-color: #1A1A1A;
+            /* Click hone ke baad ultra intense gold aura */
+            box-shadow: 0 0 35px rgba(197, 160, 89, 0.6), 0 5px 15px rgba(197, 160, 89, 0.35); 
+            transform: translateY(-2.5px);
+        }
+
+        /* The Premium Box Container with Double Glow Aura */
+        .glow-box {
+            background: linear-gradient(145deg, #ffffff, #fdfbf7);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            box-shadow: 0 0 45px rgba(197, 160, 89, 0.25), 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Main Copy Button Glow */
+        .btn-glow {
+            box-shadow: 0 0 32px rgba(197, 160, 89, 0.45), 0 6px 18px rgba(197, 160, 89, 0.25);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 55px rgba(197, 160, 89, 0.65), 0 10px 24px rgba(197, 160, 89, 0.35);
+        }
+
+        /* Language Slider Wrapper Glow */
+        .lang-slider-glow {
+            box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
+        }
+
+        /* PAGE LOAD ENTRY ANIMATIONS */
+        @keyframes slideUpFade {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-entry {
+            opacity: 0;
+            animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        
+        /* Blinking Cursor for High-Speed Typewriter effect */
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+            color: #C5A059;
+            margin-left: 2px;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 md:py-12">
+
+    <!-- STRICT VERTICAL WRAPPER ON GLASSY BACKDROP FOR NATURAL BLEND -->
+    <div class="w-full max-w-md bg-[#F4F2EC]/95 backdrop-blur-md flex flex-col items-center relative overflow-hidden pb-12 pt-8 border border-[#E5E0D8] rounded-[3rem] shadow-[0_20px_60px_rgba(20,61,41,0.08),0_10px_30px_rgba(197,160,89,0.05)]">
+        
+        <!-- Powered By -->
+        <div class="absolute top-5 right-6 text-[9px] uppercase tracking-widest text-[#B0A89A] font-extrabold z-30">
+            Powered by INVYRAH
+        </div>
+        
+        <!-- Section 1: Logo & Title -->
+        <div class="animate-entry flex flex-col items-center w-full mt-5">
+            <div class="w-24 h-24 mb-3 rounded-full bg-[#143D29] border-[3px] border-[#C5A059] flex flex-col items-center justify-center shadow-[0_0_25px_rgba(197,160,89,0.3)] p-2 text-center relative z-10">
+                <span class="text-[8px] font-extrabold text-[#C5A059] tracking-widest leading-none mt-1">DELHI CHAAP</span>
+                <span class="text-2xl my-0.5 leading-none">🍢</span>
+                <span class="text-[8px] font-bold text-white tracking-widest leading-none">EXPRESS</span>
+            </div>
+
+            <h1 class="text-[26px] font-bold text-[#C5A059] tracking-wider mt-2 text-center uppercase" style="font-family: serif;">Delhi Chaap Express</h1>
+                
+            <div class="flex justify-center gap-1.5 text-[#C5A059] my-2" style="filter: drop-shadow(0 0 8px rgba(197,160,89,0.4));">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+            </div>
+        </div>
+
+        <!-- Section 2: Categories with Persistent Outer-Aura -->
+        <div class="animate-entry delay-1 w-full px-5 mt-6 flex flex-col items-center">
+            <div class="flex flex-wrap justify-center gap-3 w-full" id="categoryTabs">
+                <button onclick="setCategory('ALL')" id="catALL" class="cat-btn active px-4 py-[8px] rounded-full text-[11px] font-bold">ALL</button>
+                <button onclick="setCategory('MALAI')" id="catMALAI" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Malai Chaap</button>
+                <button onclick="setCategory('AFGHANI')" id="catAFGHANI" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Afghani Chaap</button>
+                <button onclick="setCategory('TANDOORI')" id="catTANDOORI" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Tandoori Chaap</button>
+                <button onclick="setCategory('ACHARI')" id="catACHARI" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Achari Chaap</button>
+                <button onclick="setCategory('GARLIC')" id="catGARLIC" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Garlic Chaap</button>
+                <button onclick="setCategory('ROLL')" id="catROLL" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Chaap Roll</button>
+                <button onclick="setCategory('CHINESE')" id="catCHINESE" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Chinese Item</button>
+                <button onclick="setCategory('TASTE')" id="catTASTE" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Taste & Quality</button>
+                <button onclick="setCategory('SERVICE')" id="catSERVICE" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Service</button>
+                <button onclick="setCategory('AMBIANCE')" id="catAMBIANCE" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Ambiance</button>
+                <button onclick="setCategory('CLEANLINESS')" id="catCLEANLINESS" class="cat-btn px-4 py-[8px] rounded-full text-[11px] font-bold">Cleanliness</button>
+            </div>
+        </div>
+
+        <!-- Section 3: THE MAGIC GLOWING BOX -->
+        <div class="animate-entry delay-2 w-[90%] mt-8 p-6 rounded-[2.5rem] glow-box flex flex-col items-center relative z-20">
+            
+            <p class="absolute -top-3 bg-white px-3 text-[9px] text-[#C5A059] uppercase tracking-[0.2em] font-extrabold border border-[#C5A059] rounded-full shadow-sm">Review Generator</p>
+
+            <!-- PREMIUM ANIMATED LANGUAGE SLIDER -->
+            <div class="flex justify-center w-full mt-2 mb-6">
+                <div class="relative flex bg-[#F8F6F0] rounded-full p-1 shadow-inner border border-[#E5E0D8] w-[220px] h-[38px] cursor-pointer lang-slider-glow" onclick="toggleLanguage()">
+                    <div id="langSlider" class="absolute top-1 left-1 w-[105px] h-[28px] bg-white rounded-full shadow-[0_2px_10px_rgba(197,160,89,0.3)] transition-transform duration-300 ease-out border border-[#f0eadf]"></div>
+                    <div id="btnENGLISH" class="relative z-10 w-1/2 flex items-center justify-center text-[10px] font-extrabold text-[#C5A059] transition-colors duration-300 tracking-wider" style="text-shadow: 0 0 8px rgba(197,160,89,0.5);">ENGLISH</div>
+                    <div id="btnHINGLISH" class="relative z-10 w-1/2 flex items-center justify-center text-[10px] font-extrabold text-[#A0A0A0] transition-colors duration-300 tracking-wider">HINGLISH</div>
+                </div>
+            </div>
+
+            <!-- Review Box Area -->
+            <div class="min-h-[110px] flex items-center justify-center text-center px-4 w-full bg-[#FDFCFB] rounded-2xl border border-[#F0EBE1] shadow-inner mb-6 relative">
+                <span class="absolute top-2 left-3 text-3xl text-[#C5A059] opacity-20 font-serif">"</span>
+                <p id="reviewText" class="text-[#2C2C2C] text-[15px] leading-relaxed font-semibold relative z-10 p-2 typing-cursor">
+                    Loading review...
+                </p>
+                <span class="absolute bottom-[-10px] right-3 text-3xl text-[#C5A059] opacity-20 font-serif">"</span>
+            </div>
+
+            <!-- Premium Animated Copy Button -->
+            <div class="w-full flex gap-3 justify-center items-center">
+                <button onclick="copyToGoogle()" class="flex-1 bg-[#1C1C1C] text-[#C5A059] hover:bg-black hover:text-white hover:-translate-y-1 text-[13px] font-bold py-3.5 px-4 rounded-[14px] btn-glow flex items-center justify-center gap-2 active:scale-95 transition-all duration-300 border border-[#2A2A2A]">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                    Copy & Paste on Google
+                </button>
+                
+                <button onclick="generateReview()" class="w-[52px] h-[52px] bg-[#1C1C1C] text-[#C5A059] hover:bg-black hover:text-white hover:-translate-y-1 rounded-[14px] btn-glow flex items-center justify-center active:scale-95 transition-all duration-300 flex-shrink-0 border border-[#2A2A2A]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                </button>
+            </div>
+            
+            <p class="text-center text-[9px] text-[#A0A0A0] mt-4 w-full font-medium">For customer convenience only.</p>
+        </div>
+
+        <!-- Section 4: Icon Grid on Gentle Golden Drop Glow -->
+        <div class="animate-entry delay-3 w-full mt-8 px-6 flex flex-col items-center">
+            <div class="flex flex-wrap justify-center gap-5 mb-3 w-full">
+                
+                <div class="flex flex-col items-center gap-2">
+                    <a href="https://wa.me/919876543210" target="_blank" class="w-[48px] h-[48px] rounded-full border border-[#E5E0D8] bg-white flex items-center justify-center text-[#6A6A6A] hover:text-[#C5A059] hover:border-[#C5A059] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(197,160,89,0.35)] transition-all duration-300 shadow-sm">
+                        <svg class="w-[22px] h-[22px]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                    <span class="text-[9px] font-bold text-[#888]">WhatsApp</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <a href="tel:+919876543210" class="w-[48px] h-[48px] rounded-full border border-[#E5E0D8] bg-white flex items-center justify-center text-[#6A6A6A] hover:text-[#C5A059] hover:border-[#C5A059] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(197,160,89,0.35)] transition-all duration-300 shadow-sm">
+                        <svg class="w-[20px] h-[20px]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    </a>
+                    <span class="text-[9px] font-bold text-[#888]">Call Us</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <a href="#" download="DelhiChaapExpress.vcf" class="w-[48px] h-[48px] rounded-full border border-[#E5E0D8] bg-white flex items-center justify-center text-[#6A6A6A] hover:text-[#C5A059] hover:border-[#C5A059] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(197,160,89,0.35)] transition-all duration-300 shadow-sm">
+                        <svg class="w-[20px] h-[20px]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                    </a>
+                    <span class="text-[9px] font-bold text-[#888] text-center leading-tight">Save<br>Contact</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <a href="https://maps.google.com/?q=Delhi+Chaap+Express+BTM+Layout" target="_blank" class="w-[48px] h-[48px] rounded-full border border-[#E5E0D8] bg-white flex items-center justify-center text-[#6A6A6A] hover:text-[#C5A059] hover:border-[#C5A059] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(197,160,89,0.35)] transition-all duration-300 shadow-sm">
+                        <svg class="w-[20px] h-[20px]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </a>
+                    <span class="text-[9px] font-bold text-[#888] text-center leading-tight">Get<br>Directions</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <a href="https://instagram.com/delhichaapexpress" target="_blank" class="w-[48px] h-[48px] rounded-full border border-[#E5E0D8] bg-white flex items-center justify-center text-[#6A6A6A] hover:text-[#C5A059] hover:border-[#C5A059] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(197,160,89,0.35)] transition-all duration-300 shadow-sm">
+                        <svg class="w-[20px] h-[20px]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <span class="text-[9px] font-bold text-[#888]">Instagram</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-2">
+                    <a href="https://facebook.com" target="_blank" class="w-[48px] h-[48px] rounded-full border border-[#E5E0D8] bg-white flex items-center justify-center text-[#6A6A6A] hover:text-[#C5A059] hover:border-[#C5A059] hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(197,160,89,0.35)] transition-all duration-300 shadow-sm">
+                        <svg class="w-[20px] h-[20px]" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z"/></svg>
+                    </a>
+                    <span class="text-[9px] font-bold text-[#888]">Facebook</span>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-2 w-full">
+                <p class="text-[11px] font-medium text-[#888] leading-relaxed">
+                    Shop No. 12, Main Road, BTM Layout,<br>
+                    Bengaluru, Karnataka 560076, India
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 5: NEW "VISIT US" CARD (MATCHING REFERENCE IMAGE) -->
+        <div class="animate-entry delay-4 w-[90%] bg-white rounded-3xl p-5 shadow-sm border border-[#E5E0D8] mt-8 flex flex-col relative z-20">
+            <div class="flex items-center gap-2 mb-4">
+                <div class="w-5 h-[2px] bg-[#C5A059]"></div>
+                <span class="text-[10px] text-[#C5A059] uppercase tracking-[0.2em] font-extrabold">Visit Us</span>
+            </div>
+            
+            <div class="w-full h-[180px] rounded-2xl overflow-hidden relative border border-[#E5E0D8]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.756262445107!2d77.60803581533501!3d12.917596090891461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fc90344d79%3A0x803569733eb96452!2sBTM%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <a href="https://maps.google.com/?q=Delhi+Chaap+Express+BTM+Layout" target="_blank" class="absolute top-2 left-2 bg-white text-blue-600 px-3 py-1.5 rounded-lg text-[11px] font-bold shadow-md flex items-center gap-1.5 hover:bg-gray-50 transition-all">
+                    Open in Maps <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section 6: NEW "ABOUT US" CARD (MATCHING REFERENCE IMAGE) -->
+        <div class="animate-entry delay-5 w-[90%] bg-white rounded-3xl p-6 shadow-sm border border-[#E5E0D8] mt-6 flex flex-col relative z-20">
+            <div class="flex items-center gap-2 mb-3">
+                <div class="w-5 h-[2px] bg-[#C5A059]"></div>
+                <span class="text-[10px] text-[#C5A059] uppercase tracking-[0.2em] font-extrabold">About Us</span>
+            </div>
+            
+            <h2 class="text-[18px] font-extrabold text-[#1A1A1A] mb-3 leading-snug">Home-style flavours, made with love in Bengaluru</h2>
+            <p class="text-[13px] font-medium text-[#6A6A6A] leading-relaxed mb-5">
+                Delhi Chaap Express serves up fresh, flavourful dishes made with care for every guest. Whether you're dropping by for a quick bite or a full meal with family, we aim to make every visit warm and memorable.
+            </p>
+            
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Fresh Ingredients</span>
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Home-style Cooking</span>
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Dine-in & Takeaway</span>
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Friendly Service</span>
+            </div>
+        </div>
+
+        <!-- Section 7: NEW "WHY CHOOSE US" CARD (MATCHING REFERENCE IMAGE) -->
+        <div class="animate-entry delay-6 w-[90%] bg-white rounded-3xl p-6 shadow-sm border border-[#E5E0D8] mt-6 mb-8 flex flex-col relative z-20 shadow-[0_15px_40px_rgba(0,0,0,0.03)]">
+            <div class="flex items-center gap-2 mb-3">
+                <div class="w-5 h-[2px] bg-[#C5A059]"></div>
+                <span class="text-[10px] text-[#C5A059] uppercase tracking-[0.2em] font-extrabold">Why Choose Us</span>
+            </div>
+            
+            <h2 class="text-[18px] font-extrabold text-[#1A1A1A] mb-3 leading-snug">Great taste, honest prices, happy customers</h2>
+            <p class="text-[13px] font-medium text-[#6A6A6A] leading-relaxed mb-5">
+                We focus on consistent quality, clean preparation, and quick service so every meal feels like it's made just for you.
+            </p>
+            
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Consistent Quality</span>
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Great Value</span>
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Quick Service</span>
+                <span class="px-3 py-1.5 rounded-full border border-[#E5E0D8] text-[#4A4A4A] text-[10px] font-semibold">Hygienic Kitchen</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT (With ultra fast 15ms Typewriter) -->
+    <script>
+        const reviewData = {
+            HINGLISH: {
+                openings: [
+                    "ngl this place is a total W. ", "bro the food here literally slaps. ", "no cap, best spot in btm right now. ", 
+                    "vibe check passed. ", "literally obsessed with this place. ", "btm mein ye place literally GOAT hai. ", 
+                    "scene ekdum sort tha idhar. ", "fr the hype is real for this one. ", "aaj ka dinner plan was a massive W. ",
+                    "bhai sach batau toh, ", "aaj idhar khana khaya aur, ", "literally the best decision to come here. ",
+                    "randomly visited this place aur dil khush ho gaya. ", "agar street food pasand hai toh ye jagah jannat hai. ",
+                    "sunday ki sham sort ho gayi yahan aake. ", "office ke baad yahan aana sukoon hai. ",
+                    "pehli baar aaya aur fan ban gaya. ", "dosto ke sath aaye the aur, ", "craving ho rahi thi toh idhar aagaye. ",
+                    "kya hi swaad tha khane ka aaj. "
+                ],
+                categories: {
+                    ALL: [
+                        "food is literally bussin.", "everything we ordered was top tier.", "authentic delhi vibes fr.", 
+                        "portion sizes are crazy good.", "literally zero complaints, food was 10/10.",
+                        "khana ek number tha.", "taste bohot sahi laga mujhe.", "quality aur quantity dono mast the.",
+                        "proper delhi style street food vibes thi.", "sab kuch fresh aur garam serve kiya tha.",
+                        "totally loved the food here.", "puri menu hi lajawab lag rahi hai inki."
+                    ],
+                    MALAI: [
+                        "malai chaap is literally bussin.", "malai chaap melts in mouth fr.", "so creamy and smoky af.", 
+                        "malai chaap was straight up bomb.", "best malai chaap I've had tbh.", "inki malai chaap is a must try guys.",
+                        "malai chaap ka smoky flavor bohot sahi tha.", "malai chaap itni soft thi ki muh me pighal gayi.",
+                        "creamy texture aur perfect masale ka combo tha.", "aisi tasty malai chaap sach mein rare hai milna.",
+                        "richness aur juiciness unbeatable hai.", "malai chaap ki craving puri ho gayi aaj."
+                    ],
+                    AFGHANI: [
+                        "afghani chaap was top tier.", "literally drooling over the afghani chaap.", "afghani chaap goes crazy hard ngl.", 
+                        "juicy af and perfectly roasted.", "the marination on afghani chaap was a W.", "afghani chaap ka masala bohot lajawab tha.",
+                        "unka afghani chaap try karna, bohot sahi hai.", "afghani chaap was bomb tbh.", "spices ka balance ekdum perfect mila.",
+                        "roasted flavor aur creamy texture ka mast mix tha.", "afghani chaap ne toh purane saare records tod diye.",
+                        "afghani chaap was perfectly spiced up."
+                    ],
+                    TANDOORI: [
+                        "tandoori chaap was spicy af and I love it.", "proper dhaba style tandoori chaap no cap.", "tandoori flavor literally hits different.", 
+                        "crispy outside, juicy inside fr.", "spicy, smoky and totally worth it.", "tandoori chaap ka flavor proper dhaba style tha.",
+                        "tandoori chaap mast spicy thi.", "proper roasted tandoori chaap mili yahan.", "tandoori masale ka kick bohot sahi laga khane mein.",
+                        "perfectly grilled thi tandoori chaap, ekdum chatpati.", "aise tandoori flavors maine bangalore mein pehle nahi khaye.",
+                        "tandoori chaap is highly recommended."
+                    ],
+                    ACHARI: [
+                        "achari chaap had that perfect tangy kick.", "achari chaap passes the vibe check fr.", "so tangy and spicy, totally loved it.", 
+                        "achari flavors are bussin.", "if u like spicy food, this is a massive W.", "achari chaap bohot chatpati aur mast thi.",
+                        "achari chaap ka tanginess ekdum perfect tha.", "agar spicy pasand hai toh achari chaap try karo.",
+                        "achari masale ne chaap ko ek bilkul alag level pe pahuncha diya.", "desi flavors pasand karne walo ke liye achari chaap best hai.",
+                        "pickle wali tanginess aur smoke ka acha combination banaya inhone.", "achari masala was perfectly balanced."
+                    ],
+                    GARLIC: [
+                        "garlic chaap goes crazy ngl.", "roasted garlic flavor was literally perfect.", "garlic lovers ki jannat hai ye jagah.", 
+                        "the garlic punch was so good tbh.", "super aromatic and tasty af.", "garlic chaap was surprisingly very good.",
+                        "roasted garlic chaap ka taste bohot sahi tha.", "garlic ka punch bohot sahi aa raha tha chaap mein.",
+                        "garlic chaap ekdum fresh aur flavorful thi.", "garlic ka strong flavour bohot pasand aaya.",
+                        "perfectly cooked aur properly marinated garlic chaap mili.", "garlic lovers ke liye ye item kisi treat se kam nahi."
+                    ],
+                    ROLL: [
+                        "chaap roll is my new go-to tbh.", "roll is super filling and masaledaar.", "best grab-and-go option no cap.", 
+                        "chaap roll literally hits the spot.", "spicy stuffing makes the roll 10/10.", "chaap roll on the go khane ke liye best hai.",
+                        "roll ki filling bohot masaledaar thi.", "tried their chaap roll and it was super filling.", "roll ki roti soft thi aur stuffing bilkul perfect.",
+                        "chaap roll ka taste bohot chatpata aur mazedar tha.", "bhookh mitane ke liye inka chaap roll sabse best option hai.",
+                        "roll ki chutney aur onion ne swaad doguna kar diya."
+                    ],
+                    CHINESE: [
+                        "chinese items are literally a W.", "street style chinese food hits different.", "desi chinese vibes fr.", 
+                        "noodles and manchurian were bussin.", "spicy street chinese at its best.", "chinese items bhi proper desi street style the.",
+                        "noodles aur manchurian ka taste mast tha.", "desi chinese lovers ko bohot pasand aayega.", "chinese food was spicy and delicious.",
+                        "inke chinese items ka taste ekdum chatpata hai.", "chinese food ki preparation aur quality bohot achi lagi.",
+                        "desi touch ke sath inka chinese menu sach mein kamaal hai."
+                    ],
+                    TASTE: [
+                        "the taste is totally out of this world.", "quality is premium tbh.", "tastes exactly like authentic delhi food.", 
+                        "food quality is giving.", "every bite is literally perfection.", "khana sach mein bohot tasty tha.",
+                        "taste ke mamle mein 10/10.", "authentic delhi taste mil gaya bangalore mein.", "har bite mein mast flavor aa raha tha.",
+                        "taste maintain karke rakha hai inhone bina compromise kiye.", "ingredients ki quality saaf pata chal rahi thi khate waqt.",
+                        "authentic taste dene ke liye full marks inko."
+                    ],
+                    SERVICE: [
+                        "service was fast af.", "staff passed the vibe check tbh.", "super quick service despite the crowd.", 
+                        "didn't even have to wait, W service.", "packaging and serving was very neat.", "service bohot fast thi yahan ki.",
+                        "staff ne order jaldi laake diya, no waiting.", "bheed hone ke baad bhi service quick thi.", "fast service made the experience even better.",
+                        "order lene aur serve karne ki speed bohot achi thi.", "packaging aur serving ka tareeqa bohot neat aur clean tha.",
+                        "staff bohot humble hai aur order jaldi laake diya."
+                    ],
+                    AMBIANCE: [
+                        "aesthetic is totally giving.", "pure vibes only at this spot.", "place is so chill tbh.", 
+                        "very neat and well-lit setup.", "perfect spot to hang with the gang.", "jagah ki vibe bohot chill aur achi hai.",
+                        "clean aur hygienic place to hang out with friends.", "ambiance is simple but very clean.", "dosto ke sath baithne ke liye mast jagah hai.",
+                        "lighting aur vibe dono bohot positive hain.", "choti jagah hokar bhi bohot ache se manage kiya hai.",
+                        "vibe bohot chill aur relaxing lagi mujhe yahan."
+                    ],
+                    CLEANLINESS: [
+                        "super clean and hygienic place.", "they actually care about cleanliness no cap.", "top tier hygiene for a street food spot.", 
+                        "tables were neat and tidy.", "spotless place, major W.", "dukaan bohot saaf suthri aur hygienic thi.",
+                        "proper hygiene maintain karte hain ye log.", "street food hokar bhi cleanliness ekdum top level hai.", "clean tables and overall very neat setup.",
+                        "safai ka pura dhyan rakha gaya hai yahan.", "bheed hone ke bawajood cleanliness ka poora dhyaan rakha gaya tha.",
+                        "food preparation area ekdum neat aur clean dikh raha tha."
+                    ]
+                },
+                closings: [
+                    "10/10 would recommend fr.", "def visiting again, W experience.", "it's giving main character energy.", 
+                    "total paisa vasool no cap.", "periodt.", "fr totally worth the hype.", "pakka wapas aaunga next time.", 
+                    "paisa vasool ekdum.", "highly recommend from my side.", "must try guys.", "will visit again for sure.", 
+                    "10/10 experience.", "btm walo ke liye best spot hai.", "maza aa gaya.", "literally bussin.",
+                    "can't wait to go back.", "you guys have to try this.", "highly recommended.", "worth every single penny.", "kya baat hai ekdum jhakas."
+                ]
+            },
+            ENGLISH: {
+                openings: [
+                    "ngl this place is a total W. ", "bro the food here literally slaps. ", "no cap, best spot in BTM right now. ", 
+                    "vibe check passed. ", "literally obsessed with this place. ", "btm mein ye place literally GOAT hai. ", 
+                    "scene ekdum sort tha idhar. ", "fr the hype is real for this one. ", "aaj ka dinner plan was a massive W. ",
+                    "visited this place recently, ", "tbh best spot in btm layout. ", "food was absolutely bomb! ",
+                    "went here with a couple of friends. ", "finally tried this place out. ", "randomly stopped by and was totally amazed. ",
+                    "if you're a foodie, this place is a must visit. ", "grabbed dinner here after work, ", "heard a lot about this place so gave it a try. ",
+                    "legit the best street food experience. ", "can't even lie, this place is fire. "
+                ],
+                categories: {
+                    ALL: [
+                        "food is literally bussin.", "everything we ordered was top tier.", "authentic delhi vibes fr.", 
+                        "portion sizes are crazy good.", "literally zero complaints, food was 10/10.", "everything was super fresh and tasty.",
+                        "really authentic street food flavors.", "loved the overall quality and portion sizes.", "food is absolutely top notch here.",
+                        "every item we ordered was delicious.", "totally worth the hype.", "their entire menu seems to be crafted with perfection."
+                    ],
+                    MALAI: [
+                        "malai chaap is literally bussin.", "malai chaap melts in mouth fr.", "so creamy and smoky af.", 
+                        "malai chaap was straight up bomb.", "best malai chaap I've had tbh.", "their malai chaap is insanely good.",
+                        "the malai chaap was so tender it just melted.", "definitely try the malai chaap here guys.", "smoky flavor on the malai chaap was perfect.",
+                        "best malai chaap in bangalore hands down.", "a beautiful combination of creamy texture and rich spices.",
+                        "the juiciness of their malai chaap is just unbeatable."
+                    ],
+                    AFGHANI: [
+                        "afghani chaap was top tier.", "literally drooling over the afghani chaap.", "afghani chaap goes crazy hard ngl.", 
+                        "juicy af and perfectly roasted.", "the marination on afghani chaap was a W.", "afghani chaap was juicy and perfectly spiced.",
+                        "loved the creamy texture of the afghani chaap.", "the afghani chaap here is a total game changer.", "highly recommend ordering the afghani chaap.",
+                        "afghani chaap was roasted to perfection.", "the marination on the afghani chaap went deep into the layers.",
+                        "a perfect mix of roasted char and creamy goodness."
+                    ],
+                    TANDOORI: [
+                        "tandoori chaap was spicy af and I love it.", "proper dhaba style tandoori chaap no cap.", "tandoori flavor literally hits different.", 
+                        "crispy outside, juicy inside fr.", "spicy, smoky and totally worth it.", "tandoori chaap had the perfect smoky dhaba flavor.",
+                        "loved the spicy kick in the tandoori chaap.", "tandoori chaap was crispy outside and juicy inside.", "if you like it spicy, get the tandoori chaap.",
+                        "proper authentic tandoori flavors.", "perfectly grilled, spicy, and absolutely mouth-watering.",
+                        "never had such brilliant tandoori flavors in bangalore before."
+                    ],
+                    ACHARI: [
+                        "achari chaap had that perfect tangy kick.", "achari chaap passes the vibe check fr.", "so tangy and spicy, totally loved it.", 
+                        "achari flavors are bussin.", "if u like spicy food, this is a massive W.", "achari chaap had a really nice tangy punch.",
+                        "the pickled spices in the achari chaap were unique.", "loved the desi flavor of the achari chaap.", "very zesty and perfectly grilled achari chaap.",
+                        "achari chaap is a must try for spice lovers.", "they balanced the sourness of the pickle with the smoky char beautifully.",
+                        "very zesty, sharp, and delicious achari chaap."
+                    ],
+                    GARLIC: [
+                        "garlic chaap goes crazy ngl.", "roasted garlic flavor was literally perfect.", "garlic lovers ki jannat hai ye jagah.", 
+                        "the garlic punch was so good tbh.", "super aromatic and tasty af.", "the garlic chaap was super aromatic and tasty.",
+                        "roasted garlic flavor was perfectly balanced.", "garlic lovers should definitely try this.", "the garlic punch made the chaap so much better.",
+                        "properly marinated garlic chaap.", "the garlic punch was strong but didn't overpower the other spices.",
+                        "an absolute treat for anyone who loves garlic flavors."
+                    ],
+                    ROLL: [
+                        "chaap roll is my new go-to tbh.", "roll is super filling and masaledaar.", "best grab-and-go option no cap.", 
+                        "chaap roll literally hits the spot.", "spicy stuffing makes the roll 10/10.", "chaap roll is super filling and tasty.",
+                        "loved the spicy stuffing inside the roll.", "perfect quick bite if you're in a hurry.", "the sauces in the roll were really good.",
+                        "chaap roll is definitely value for money.", "the roll wrap was super soft and the filling was incredibly spicy.",
+                        "the added onions and chutney made the roll ten times better."
+                    ],
+                    CHINESE: [
+                        "chinese items are literally a W.", "street style chinese food hits different.", "desi chinese vibes fr.", 
+                        "noodles and manchurian were bussin.", "spicy street chinese at its best.", "their chinese items have a great desi street style kick.",
+                        "noodles and manchurian were surprisingly very good.", "if you crave desi chinese, this is the place.", "loved the spicy street style chinese food.",
+                        "their chinese menu is totally worth trying.", "loved the preparation and quality of their chinese menu.",
+                        "a perfect fusion of street flavors in their chinese dishes."
+                    ],
+                    TASTE: [
+                        "the taste is totally out of this world.", "quality is premium tbh.", "tastes exactly like authentic delhi food.", 
+                        "food quality is giving.", "every bite is literally perfection.", "the taste is spectacular and quality feels premium.",
+                        "every bite gives you authentic street food vibes.", "taste is easily 10/10.", "they use really fresh ingredients, you can tell.",
+                        "authentic flavors that are hard to find in BLR.", "they have maintained incredible consistency without compromising.",
+                        "full marks to them for preserving the authentic street taste."
+                    ],
+                    SERVICE: [
+                        "service was fast af.", "staff passed the vibe check tbh.", "super quick service despite the crowd.", 
+                        "didn't even have to wait, W service.", "packaging and serving was very neat.", "service was super fast and efficient.",
+                        "didn't have to wait long at all.", "the staff is quick to take and serve orders.", "great packaging and speedy service.",
+                        "fast service makes it a great experience.", "the speed of order taking and serving was highly impressive.",
+                        "fast and efficient service made the experience even better."
+                    ],
+                    AMBIANCE: [
+                        "aesthetic is totally giving.", "pure vibes only at this spot.", "place is so chill tbh.", 
+                        "very neat and well-lit setup.", "perfect spot to hang with the gang.", "the vibe of the place is very chill.",
+                        "very clean and bright ambiance.", "great place to hang out with friends.", "simple seating but very neat and well lit.",
+                        "loved the positive vibe of this small joint.", "comfortable seating arrangements and nice background music.",
+                        "they have managed the space really well, keeping it tidy."
+                    ],
+                    CLEANLINESS: [
+                        "super clean and hygienic place.", "they actually care about cleanliness no cap.", "top tier hygiene for a street food spot.", 
+                        "tables were neat and tidy.", "spotless place, major W.", "the place is very clean and hygienic.",
+                        "they maintain good cleanliness despite the crowd.", "food prep area looked very neat.", "high hygiene standards for a street food spot.",
+                        "tables were perfectly clean.", "the cleanliness and hygiene of the shop are very well maintained.",
+                        "tables and the counter were perfectly clean and sanitized."
+                    ]
+                },
+                closings: [
+                    "10/10 would recommend fr.", "def visiting again, W experience.", "it's giving main character energy.", 
+                    "total paisa vasool no cap.", "periodt.", "fr totally worth the hype.", "pakka wapas aaunga next time.", 
+                    "paisa vasool ekdum.", "highly recommend from my side.", "must try guys.", "will visit again for sure.", 
+                    "10/10 experience.", "btm walo ke liye best spot hai.", "maza aa gaya.", "literally bussin.",
+                    "can't wait to go back.", "you guys have to try this.", "highly recommended.", "worth every single penny.", "kya baat hai ekdum jhakas."
+                ]
+            }
+        };
+
+        const emojis = ["🔥", "💯", "🤌", "😭", "✨", "💀", "🤤", "🫶", "💣", "🙌"];
+
+        let currentLang = 'ENGLISH';
+        let currentCat = 'ALL';
+        let typingTimeout; 
+        
+        const categoriesList = ['ALL', 'MALAI', 'AFGHANI', 'TANDOORI', 'ACHARI', 'GARLIC', 'ROLL', 'CHINESE', 'TASTE', 'SERVICE', 'AMBIANCE', 'CLEANLINESS'];
+
+        function setCategory(cat) {
+            currentCat = cat;
+            categoriesList.forEach(c => {
+                const el = document.getElementById('cat' + c);
+                if(el) {
+                    if (c === cat) {
+                        el.classList.add('active');
+                    } else {
+                        el.classList.remove('active');
+                    }
+                }
+            });
+            generateReview();
+        }
+
+        function toggleLanguage() {
+            if (currentLang === 'ENGLISH') {
+                setLang('HINGLISH');
+            } else {
+                setLang('ENGLISH');
+            }
+        }
+
+        function setLang(lang) {
+            currentLang = lang;
+            const slider = document.getElementById('langSlider');
+            const btnEng = document.getElementById('btnENGLISH');
+            const btnHin = document.getElementById('btnHINGLISH');
+            
+            if (lang === 'ENGLISH') {
+                slider.style.transform = 'translateX(0)';
+                btnEng.style.color = '#C5A059';
+                btnEng.style.textShadow = '0 0 8px rgba(197,160,89,0.5)';
+                btnHin.style.color = '#A0A0A0';
+                btnHin.style.textShadow = 'none';
+            } else {
+                slider.style.transform = 'translateX(107px)'; 
+                btnHin.style.color = '#C5A059';
+                btnHin.style.textShadow = '0 0 8px rgba(197,160,89,0.5)';
+                btnEng.style.color = '#A0A0A0';
+                btnEng.style.textShadow = 'none';
+            }
+            generateReview();
+        }
+
+        function getRandomItem(array) {
+            return array[Math.floor(Math.random() * array.length)];
+        }
+
+        function generateReview() {
+            const data = reviewData[currentLang];
+            
+            const includeOpening = Math.random() > 0.15; 
+            const includeClosing = Math.random() > 0.15; 
+            const includeEmoji = Math.random() > 0.2; 
+
+            const opening = includeOpening ? getRandomItem(data.openings) : "";
+            const middle = getRandomItem(data.categories[currentCat]);
+            const closing = includeClosing ? " " + getRandomItem(data.closings) : "";
+            const emoji = includeEmoji ? " " + getRandomItem(emojis) : "";
+            
+            let fullReview = `${opening}${middle}${closing}${emoji}`.trim();
+            fullReview = fullReview.replace(/\s+/g, ' ');
+            
+            if (Math.random() > 0.4) {
+                fullReview = fullReview.toLowerCase();
+            }
+
+            const reviewEl = document.getElementById('reviewText');
+            
+            if(typingTimeout) {
+                clearTimeout(typingTimeout);
+            }
+            
+            reviewEl.innerText = ''; 
+            
+            const chars = Array.from(fullReview);
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < chars.length) {
+                    reviewEl.innerText += chars[i];
+                    i++;
+                    typingTimeout = setTimeout(typeWriter, 15); 
+                }
+            }
+            
+            typeWriter();
+        }
+
+        window.onload = generateReview;
+
+        function copyToGoogle() {
+            const text = document.getElementById('reviewText').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Review Copy Ho Gaya! Ab naye tab me Google khul raha hai...");
+                const googleReviewLink = "https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID_HERE";
+                window.open(googleReviewLink, "_blank");
+            }).catch(err => {
+                alert("Copy karne me dikkat aayi, kripya dobara try karein.");
+            });
+        }
+    </script>
+</body>
+</html>
